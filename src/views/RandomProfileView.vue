@@ -22,19 +22,20 @@ onBeforeMount(() => {
     <h1 class="text-center text-4xl mt-10">Here is a Random Profile!</h1>
     <div class="border border-1 max-w-sm mx-auto rounded-xl shadow-lg p-8 m-4 min-h-[300px]">
         <div v-if="user.name">
-            <div class="flex flex-row items-center place-content-around g-0">
-                <img class="rounded-full" :src="user.picture.large" alt="">
+            <!-- <div class="flex flex-row items-center place-content-around g-0"> -->
+            <div class="grid grid-cols-2 items-center">
+                <img class="rounded-full ring-offset-2 ring-4" :class="{'ring-pink-400': user.gender == 'female'}" :src="user.picture.large" alt="">
                 <div>
                     <p class="text-xl">{{ user.name.first }} {{ user.name.last }}</p>
                     <p>{{ user.dob.age }} years old</p>
                     <p>Member since {{ user.registered.date.substring(0, 4) }}</p>
                 </div>
             </div>
-            <div class="text-center">
-                <p class="pl-4 mt-4">{{ user.location.street.name }} {{ user.location.street.number }},
+            <div class="">
+                <p class="mt-4"> {{ user.location.street.name }} {{ user.location.street.number }},
                     {{user.location.postcode }}, {{ user.location.city }}</p>
-                <p class="pl-4">{{ user.phone }}</p>
-                <p class="pl-4">{{ user.email }}</p>
+                <p class="">{{ user.phone }}</p>
+                <p class="">{{ user.email }}</p>
             </div>
         </div>
     </div>
