@@ -14,6 +14,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink class="transition duration-500	 ease-in-out hover:text-emerald-400" to="/stringchecker">StringChecker</RouterLink>
         <RouterLink class="transition duration-500	 ease-in-out hover:text-emerald-400" to="/passchecker">PassChecker</RouterLink>
         <RouterLink class="transition duration-500	 ease-in-out hover:text-emerald-400" to="/bmicalc">BMICalc</RouterLink>
+        <RouterLink class="transition duration-500	 ease-in-out hover:text-emerald-400" to="/randomprofile">RandomProfiles</RouterLink>
         <RouterLink class="transition duration-500	 ease-in-out hover:text-emerald-400" to="/about">About</RouterLink>
         </div>
       </div>

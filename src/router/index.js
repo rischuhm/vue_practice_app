@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import StringCheckerView from '../views/StringCheckerView.vue'
 import PassCheckerView from '../views/PassCheckerView.vue'
 import bmiCalcView from '../views/bmiCalcView.vue'
+import RandomProfileView from '../views/RandomProfileView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/bmicalc',
       name: 'bmicalc',
       component: bmiCalcView
+    },
+    {
+      path: '/randomprofile',
+      name: 'randomprofile',
+      component: RandomProfileView
     },
     {
       path: '/about',
